@@ -13,6 +13,7 @@ if (process.env.NODE_ENV !== "PRODUCTION") {
 const product = require("./routes/productRoute");
 const order = require("./routes/orderRoute");
 const user = require("./routes/userRoute")
+const payment = require("./routes/paymentRoute")
 
 
 app.use(express.json());
@@ -22,6 +23,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use('api/v1',product)
 app.use("/api/v1", order);
 app.use("/api/v1",user)
+app.use("/api/v1",payment)
 
 app.use(errorMiddleware)
 
