@@ -1,0 +1,68 @@
+.speedDial {
+  position: fixed;
+  right: 3vmax;
+  top: 3vmax;
+}
+
+.speedDialIcon {
+  width: 56px;
+  height: 56px;
+  border-radius: 100%;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #E99BA4;
+  color: white;
+}
+
+.navbar-logo {
+  flex: 1; /* Take as much space as needed */
+}
+
+.navbar-logo img {
+  width: 150px; /* Adjust according to your logo size */
+}
+
+.navbar-options {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center; /* Center the options */
+  flex: 2; /* Take twice as much space as the logo */
+}
+
+.navbar-options li {
+  margin-right: 20px;
+}
+
+.navbar-options a {
+  text-decoration: none;
+  color: white;
+}
+
+.navbar-buttons {
+  flex: 1; /* Take as much space as needed */
+  display: flex;
+  justify-content: flex-end; /* Align buttons to the right */
+}
+
+.navbar-buttons button {
+  margin: 5px;
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.navbar-buttons button:hover {
+  background-color: white;
+  color: #333;
+}
+
