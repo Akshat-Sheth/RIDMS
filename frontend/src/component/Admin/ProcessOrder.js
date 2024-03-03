@@ -160,6 +160,20 @@ const ProcessOrder = ({ history, match }) => {
                 >
                   <h1>Process Order</h1>
 
+                  <div>
+                    <AccountTreeIcon />
+                    <select onChange={(e) => setStatus(e.target.value)}>
+                      <option value="">Choose Category</option>
+                      {order.orderStatus === "Processing" && (
+                        <option value="Shipped">Shipped</option>
+                      )}
+
+                      {order.orderStatus === "Shipped" && (
+                        <option value="Delivered">Delivered</option>
+                      )}
+                    </select>
+                  </div>
+
                   <Button
                     id="createProductBtn"
                     type="submit"

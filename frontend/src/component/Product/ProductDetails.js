@@ -21,6 +21,7 @@ import {
 } from "@material-ui/core";
 import { Rating } from "@material-ui/lab";
 import { NEW_REVIEW_RESET } from "../../constants/productConstants";
+import { addItemsToCart } from '../../actions/cartAction'
 
 const ProductDetails = ({ match }) => {
   const dispatch = useDispatch();
@@ -61,7 +62,7 @@ const ProductDetails = ({ match }) => {
   };
 
   const addToCartHandler = () => {
-    // dispatch(addItemsToCart(match.params.id, quantity));
+    dispatch(addItemsToCart(match.params.id, quantity));
     alert.success("Item Added To Cart");
   };
 

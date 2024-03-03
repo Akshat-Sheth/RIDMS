@@ -170,6 +170,20 @@ const UpdateProduct = ({ history, match }) => {
               ></textarea>
             </div>
 
+            <div>
+              <AccountTreeIcon />
+              <select
+                value={category}
+                onChange={(e) => setCategory(e.target.value)}
+              >
+                <option value="">Choose Category</option>
+                {categories.map((cate) => (
+                  <option key={cate} value={cate}>
+                    {cate}
+                  </option>
+                ))}
+              </select>
+            </div>
 
             <div>
               <StorageIcon />

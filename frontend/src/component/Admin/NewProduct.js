@@ -133,6 +133,18 @@ const NewProduct = ({ history }) => {
             </div>
 
             <div>
+              <AccountTreeIcon />
+              <select onChange={(e) => setCategory(e.target.value)}>
+                <option value="">Choose Category</option>
+                {categories.map((cate) => (
+                  <option key={cate} value={cate}>
+                    {cate}
+                  </option>
+                ))}
+              </select>
+            </div>
+
+            <div>
               <StorageIcon />
               <input
                 type="number"
