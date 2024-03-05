@@ -39,3 +39,8 @@
 .MuiTypography-root {
   background-color: #fff !important;
 }
+
+p  {
+  font-size: 20px;
+  font-weight: bold;
+}

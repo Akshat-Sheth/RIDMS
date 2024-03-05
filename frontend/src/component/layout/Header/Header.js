@@ -1,11 +1,17 @@
-import React from "react";
+import React, { useEffect } from "react";
 // import { ReactNavbar } from "overlay-navbar";
 import logo from "../../../images/Logo.jpeg";
 import { useHistory } from "react-router-dom";
+import { useSelector } from "react-redux";
 
 const Header = () => {
 
   const history = useHistory();
+  const login = useSelector((state) => state.user.isAuthenticated)
+
+  useEffect(()=>{
+    console.log("value of login",login)
+  })  
 
   const navigateToLogin = () => {
     history.push('/login')
@@ -28,10 +34,12 @@ const Header = () => {
         <li><a href="contact">Contact Us</a></li>
       </ul>
       {/* Login and Register buttons */}
+      {!login && 
       <div className="navbar-buttons">
         <button onClick={navigateToLogin} >Login</button>
         <button onClick={navigateToLogin} >Register</button>
       </div>
+}
     </nav>
     </>
   );
