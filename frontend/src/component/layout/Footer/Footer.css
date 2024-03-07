@@ -39,6 +39,8 @@
   width: 40px;
   height: 40px;
   margin-left: 10px;
+  /* mix-blend-mode: multiply;
+  filter: contrast(1); */
 }
 
 .footer-bottom {
@@ -46,6 +48,3 @@
   margin-top: 10px;
 }
 
-/* a > img {
-  mix-blend-mode:multiply;
-} */

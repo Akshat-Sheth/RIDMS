@@ -1,68 +1,57 @@
-.about-us-container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #f9f9f9;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin-top: 40px;
-  }
-  
-  .about-us-header {
-    text-align: center;
-    margin-bottom: 20px;
-  }
-  
-  .about-us-header h1 {
-    font-size: 2.5rem;
-    color: #333;
-  }
-  
-  .about-us-content {
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 10px;
-  }
+.fancy-about-page {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* Align items to the top */
+  padding: 50px;
+}
 
-  .about-us-content > p{
-    margin-top: 15px;
-  }
+.left-side {
+  flex: 1;
+  max-width: 70%; /* Limit image to half of the container */
+}
 
-  .about-us-content > h2{
-    margin-top: 15px;
-  }
-  
-  .team {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin-top: 20px;
-  }
-  
-  .team-member {
-    text-align: center;
-    margin: 0 20px 20px;
-    padding: 20px;
-    background-color: #f9f9f9;
-    border-radius: 10px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-  }
-  
-  .team-member h3 {
-    font-size: 1.5rem;
-    margin-top: 10px;
-  }
-  
-  .team-member p {
-    font-size: 1rem;
-    color: #777;
-  }
-  
-  .team-member-img {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-bottom: 10px;
-  }
-  
+.left-side img {
+  width: 100%;
+  max-height: 600px; /* Limit image height */
+  display: block;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.right-side {
+  flex: 1;
+  background-color: white;
+  height: 560px; /* Set right side height to match image height */
+}
+
+.info {
+  margin-left: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100%; /* Ensure content fills the right side */
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center; */
+}
+
+
+.info ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 100%;
+}
+
+.info ul li {
+  margin-bottom: 10px;
+  font-size: 40px;
+
+}
+
+.info ul li strong {
+  font-weight: bold;
+}

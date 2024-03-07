@@ -40,6 +40,7 @@ import ProductReviews from "./component/Admin/ProductReviews";
 import NotFound from "./component/layout/Not Found/NotFound";
 import AboutUs from './component/Home/AboutUs'
 import ContactUs from './component/Home/ContactUs'
+import Projects from "./component/Home/Projects";
 
 function App() {
   const { isAuthenticated, user } = useSelector((state) => state.user);
@@ -87,6 +88,7 @@ function App() {
         <Route exact path="/search" component={Search} />
         <Route exact path="/about" component={AboutUs} />
         <Route exact path="/contact" component={ContactUs} />
+        <Route exact path="/projects" component={Projects} />
 
         <ProtectedRoute exact path="/account" component={Profile} />
 
