@@ -1,14 +1,14 @@
 import React from "react";
 import "./Footer.css";
-import instagram from '../../../images/instagram.jpeg'
-import linkedin from '../../../images/linkedin.png'
-import youtube from '../../../images/youtube.png'
+import instagram from '../../../images/instagram2.png'
+import linkedin from '../../../images/linkedin2.png'
+import youtube from '../../../images/youtube2.png'
 import Logo from "../../../images/Logo.jpeg"
 
 
 const Footer = () => {
   return (
-    <footer className="footer">
+  <footer className="footer">
     <div className="footer-content">
       <div className="footer-section logo">
         <img src={Logo} alt="Logo" className="footer-logo" />
