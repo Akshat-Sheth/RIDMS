@@ -129,7 +129,7 @@ const NewProduct = ({ history }) => {
                 onChange={(e) => setDescription(e.target.value)}
                 cols="30"
                 rows="1"
-              ></textarea>
+              ></textarea> 
             </div>
 
             <div>
